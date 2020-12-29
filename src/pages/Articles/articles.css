@@ -1,0 +1,19 @@
+.articles__heading {
+  font-size: 3rem;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.articles__heading::after {
+  content: '';
+  width: 50%;
+  background: #ff4444;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}

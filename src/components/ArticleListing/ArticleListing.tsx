@@ -14,10 +14,8 @@ interface Article {
 const ArticleListing = (props: { article: Article }) => {
   const { id, title, description, author, date } = props.article;
   return (
-    <div className='article-listing'>
-      <Link className='article-listing__link' to={`/articles/${id}`}>
-        <h2 className='article-listing__title'>{title}</h2>
-      </Link>
+    <Link className='article-listing' to={`/articles/${id}`}>
+      <h2 className='article-listing__title'>{title}</h2>
       <div className='article-listing__meta'>
         <span className='article-listing__author'>{author}</span>
         {' - '}
@@ -26,7 +24,7 @@ const ArticleListing = (props: { article: Article }) => {
         </span>
       </div>
       <p className='article-listing__description'>{description}</p>
-    </div>
+    </Link>
   );
 };
 

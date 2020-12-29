@@ -7,6 +7,7 @@
 .nav__list {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .nav__item + .nav__item {

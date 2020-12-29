@@ -1,13 +1,14 @@
 .article-listing {
+  display: block;
+  text-decoration: none;
+  color: #333;
   background: #f3f3f3;
   padding: 1.5rem;
+  transition: 300ms;
 }
 
-.article-listing__link {
-  display: inline-block;
-  color: #333;
-  text-decoration: none;
-  margin-bottom: 0.25rem;
+.article-listing:hover {
+  transform: scale(1.025);
 }
 
 .article-listing__meta {
