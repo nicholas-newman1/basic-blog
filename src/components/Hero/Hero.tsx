@@ -1,4 +1,4 @@
-import hero from '../../images/hero-image-1.png';
+import { Link } from 'react-router-dom';
 import './hero.css';
 
 const Hero = () => {
@@ -9,7 +9,9 @@ const Hero = () => {
         <p className='hero__text'>
           Here You'll Find The Best Articles Ever Written
         </p>
-        <button className='btn'>View Articles</button>
+        <Link to='/articles' className='hero__btn'>
+          <button className='btn'>View Articles</button>
+        </Link>
       </div>
     </section>
   );

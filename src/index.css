@@ -34,4 +34,10 @@ main {
   background: #ff4444;
   color: white;
   border-radius: 1000px;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
 }
