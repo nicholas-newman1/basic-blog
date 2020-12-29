@@ -1,6 +1,6 @@
 .article-listing {
   background: #f3f3f3;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .article-listing__link {
@@ -16,6 +16,7 @@
 
 .article-listing__title {
   font-size: 1.375rem;
+  text-transform: capitalize;
 }
 
 .article-listing__author {

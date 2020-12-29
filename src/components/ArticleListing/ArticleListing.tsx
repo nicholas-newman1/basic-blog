@@ -12,14 +12,7 @@ interface Article {
 }
 
 const ArticleListing = (props: { article: Article }) => {
-  const {
-    id,
-    title,
-    description,
-    author,
-    date,
-    image: { src, alt },
-  } = props.article;
+  const { id, title, description, author, date } = props.article;
   return (
     <div className='article-listing'>
       <Link className='article-listing__link' to={`/articles/${id}`}>
