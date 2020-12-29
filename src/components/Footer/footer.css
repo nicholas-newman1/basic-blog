@@ -1,0 +1,7 @@
+.footer {
+  background: #eee;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
