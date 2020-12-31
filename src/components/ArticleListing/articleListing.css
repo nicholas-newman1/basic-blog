@@ -11,13 +11,19 @@
   transform: scale(1.025);
 }
 
-.article-listing__meta {
-  margin-bottom: 0.5rem;
-}
-
 .article-listing__title {
   font-size: 1.375rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.article-listing__meta {
+  margin-bottom: 0.75rem;
 }
 
 .article-listing__author {
@@ -29,4 +35,17 @@
 
 .article-listing__date {
   font-size: 0.9rem;
+}
+
+.article-listing__description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 400px) {
+  .article-listing__title {
+    font-size: 1.375rem;
+  }
 }

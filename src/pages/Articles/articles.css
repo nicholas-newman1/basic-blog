@@ -1,10 +1,15 @@
+.articles {
+  padding: 2rem 0 4rem 0;
+}
+
 .articles__heading {
   font-size: 3rem;
   font-weight: 300;
   position: relative;
   display: inline-block;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
 }
 
 .articles__heading::after {
@@ -16,4 +21,16 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+}
+
+.articles__list {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .articles__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
