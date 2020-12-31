@@ -43,6 +43,22 @@
   -webkit-box-orient: vertical;
 }
 
+.article-listing--small {
+  padding: 1rem;
+}
+
+.article-listing--small .article-listing__description {
+  display: none;
+}
+
+.article-listing--small .article-listing__title {
+  font-size: 1.1rem;
+}
+
+.article-listing--small .article-listing__meta {
+  margin-bottom: 0;
+}
+
 @media (min-width: 400px) {
   .article-listing__title {
     font-size: 1.375rem;

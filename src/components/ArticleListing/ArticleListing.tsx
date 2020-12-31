@@ -11,10 +11,18 @@ interface Article {
   body: string;
 }
 
-const ArticleListing = (props: { article: Article }) => {
-  const { id, title, description, author, date } = props.article;
+interface Props {
+  article: Article;
+  small?: Boolean;
+}
+
+const ArticleListing = ({ article, small = false }: Props) => {
+  const { id, title, description, author, date } = article;
   return (
-    <Link className='article-listing' to={`/articles/${id}`}>
+    <Link
+      className={`article-listing ${small ? 'article-listing--small' : ''}`}
+      to={`/articles/${id}`}
+    >
       <h2 className='article-listing__title'>{title}</h2>
       <div className='article-listing__meta'>
         <span className='article-listing__author'>{author}</span>

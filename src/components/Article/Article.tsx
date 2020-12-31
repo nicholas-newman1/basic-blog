@@ -12,13 +12,7 @@ interface ArticleProp {
 }
 
 const Article = (props: { article: ArticleProp }) => {
-  const {
-    title,
-    author,
-    date,
-    image: { src, alt },
-    body,
-  } = props.article;
+  const { title, author, date, body } = props.article;
 
   const cleanHTML = DOMPurify.sanitize(body);
 
