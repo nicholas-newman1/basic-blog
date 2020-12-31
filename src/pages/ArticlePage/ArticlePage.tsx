@@ -31,7 +31,7 @@ const ArticlePage = (props: Props) => {
             </li>
           ))}
         </ul>
-        <Link to='/article'>
+        <Link to='/articles'>
           <button className='btn'>View More Articles</button>
         </Link>
       </aside>
