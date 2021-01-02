@@ -1,0 +1,24 @@
+.hero {
+  background: #f3f3f3;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.text {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,36 @@
+.container {
+  padding: 2rem 0 4rem 0;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
+}
+
+.heading::after {
+  content: '';
+  width: 50%;
+  background: #ff4444;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

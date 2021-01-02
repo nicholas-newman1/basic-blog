@@ -1,0 +1,12 @@
+.layout {
+  /* push footer to bottom on pages where content does not reach the bottom of
+  the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.main {
+  margin-top: 4rem; /* header height */
+}
